@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"
+        android:layout_weight="6"
+        android:layout_gravity="center" />-->
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="50sp"
+            android:layout_marginBottom="40dp"/>
+        <Button
+            android:id="@+id/btnStart"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:text="@string/startText"
+            android:textColor="@color/background"
+            android:textSize="26sp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rankText"
+            android:background="@drawable/button"
+            android:layout_gravity="center"
+            android:textColor="@color/background"
+            android:textSize="26sp"
+            android:id="@+id/btnRank"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quitText"
+            android:background="@drawable/button"
+            android:textColor="@color/background"
+            android:textSize="26sp"
+            android:layout_gravity="center"
+            android:id="@+id/btnQuit"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</RelativeLayout>

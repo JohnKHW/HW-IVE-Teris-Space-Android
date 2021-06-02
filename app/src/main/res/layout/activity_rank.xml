@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/rankBackground"
+    tools:context=".RankActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+        <TextView
+            android:layout_height="@dimen/rankMargin"
+            android:layout_width="match_parent"
+            android:background="@color/rankParent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:text="@string/rank"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="@dimen/rankMargin"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/rankColor"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:background="@color/rankName"
+                android:text="@string/name"/>
+            <TextView
+                android:layout_width="@dimen/rankMargin"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/rankColor"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:text="@string/score"/>
+        </LinearLayout>
+        <TextView
+            android:layout_height="@dimen/rankMargin"
+            android:layout_width="match_parent"
+            android:background="@color/rankParent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rankBackground"
+            android:background="@color/rankBackground"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/list_item">
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1" >
+        <TextView
+            android:layout_height="@dimen/rankMargin"
+            android:layout_width="match_parent"
+            android:background="@color/rankParent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:textAlignment="center"
+                android:id="@+id/myRank"
+                android:text="\??"/>
+            <TextView
+                android:layout_width="@dimen/rankMargin"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/rankColor"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:background="@color/rankName"
+                android:layout_weight="1"
+                android:id="@+id/myName"
+                android:text="\??"/>
+            <TextView
+                android:layout_width="@dimen/rankMargin"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/rankColor"
+                android:textAlignment="center" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/rankColor"
+                android:id="@+id/myScore"
+                android:text="\??"/>
+        </LinearLayout>
+        <TextView
+            android:layout_height="@dimen/rankMargin"
+            android:layout_width="match_parent"
+            android:background="@color/rankParent"/>
+    </LinearLayout>
+
+</LinearLayout>

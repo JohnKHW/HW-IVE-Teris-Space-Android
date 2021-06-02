@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1" >
+        <TextView
+            android:layout_width="@dimen/rankMargin"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rankMargin"
+                android:background="@color/colorAccent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1" >
+                <TextView
+                    android:id="@+id/tvRank"
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/rank"
+                    android:gravity="center"
+                    android:textColor="@color/rankColor"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="@dimen/rankMargin"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/rankColor"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/rankColor"
+                    android:background="@color/rankName"
+                    android:id="@+id/tvName"
+                    android:text="@string/name"/>
+                <TextView
+                    android:layout_width="@dimen/rankMargin"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/rankColor"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="97dp"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="@color/rankColor"
+                    android:id="@+id/tvScore"
+                    android:text="@string/score"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rankShadow"
+                android:background="@color/rankShadowColor"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rankMargin"
+                android:background="@color/colorAccent"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="@dimen/rankMargin"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rankBackground"
+        android:background="@color/rankBackground"/>
+</LinearLayout>

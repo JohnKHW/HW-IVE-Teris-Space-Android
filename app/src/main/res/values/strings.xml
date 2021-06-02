@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Space Rescue</string>
+    <string name="startText">Start</string>
+    <string name="rankText">Rank</string>
+    <string name="quitText">Logout</string>
+    <string name="btnStart">Start</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="rank">Rank</string>
+    <string name="name">Name</string>
+    <string name="score">Score</string>
+</resources>
